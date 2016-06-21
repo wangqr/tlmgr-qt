@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>791</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Repository</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignTop</set>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>71</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTlmgr">
+    <property name="title">
+     <string>tlmgr</string>
+    </property>
+    <addaction name="actionLoad_default_from_tlpdb"/>
+    <addaction name="actionLoad_standard_net_repo"/>
+    <addaction name="actionLoad_other_repository"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionGeneral"/>
+    <addaction name="actionPaper"/>
+    <addaction name="actionPlatforms"/>
+    <addaction name="actionGUI_language"/>
+    <addaction name="actionExpert_options"/>
+    <addaction name="actionEnable_debugging_output"/>
+    <addaction name="actionDisable_auto_install_of_new_packages"/>
+    <addaction name="actionDisable_auto_removal_of_server_deleted_packages"/>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="actionUpdate_filname_database"/>
+    <addaction name="actionRebuild_all_formats"/>
+    <addaction name="actionUpdate_font_map_database"/>
+    <addaction name="actionRestore_packages_from_backup"/>
+    <addaction name="actionHandle_symlinks_in_system_dirs"/>
+    <addaction name="actionRemove_TeX_Live_2016"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionManual"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuTlmgr"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuActions"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_default_from_tlpdb">
+   <property name="text">
+    <string>Load default from tlpdb</string>
+   </property>
+  </action>
+  <action name="actionLoad_standard_net_repo">
+   <property name="text">
+    <string>Load standard net repo</string>
+   </property>
+  </action>
+  <action name="actionLoad_other_repository">
+   <property name="text">
+    <string>Load other repository</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionGeneral">
+   <property name="text">
+    <string>General</string>
+   </property>
+  </action>
+  <action name="actionPaper">
+   <property name="text">
+    <string>Paper</string>
+   </property>
+  </action>
+  <action name="actionPlatforms">
+   <property name="text">
+    <string>Platforms</string>
+   </property>
+  </action>
+  <action name="actionGUI_language">
+   <property name="text">
+    <string>GUI language</string>
+   </property>
+  </action>
+  <action name="actionExpert_options">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Expert options</string>
+   </property>
+  </action>
+  <action name="actionEnable_debugging_output">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Enable debugging output</string>
+   </property>
+  </action>
+  <action name="actionDisable_auto_install_of_new_packages">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Disable auto-install of new packages</string>
+   </property>
+  </action>
+  <action name="actionDisable_auto_removal_of_server_deleted_packages">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Disable auto-removal of server-deleted packages</string>
+   </property>
+  </action>
+  <action name="actionUpdate_filname_database">
+   <property name="text">
+    <string>Update filname database</string>
+   </property>
+  </action>
+  <action name="actionRebuild_all_formats">
+   <property name="text">
+    <string>Rebuild all formats</string>
+   </property>
+  </action>
+  <action name="actionUpdate_font_map_database">
+   <property name="text">
+    <string>Update font map database</string>
+   </property>
+  </action>
+  <action name="actionRestore_packages_from_backup">
+   <property name="text">
+    <string>Restore packages from backup</string>
+   </property>
+  </action>
+  <action name="actionHandle_symlinks_in_system_dirs">
+   <property name="text">
+    <string>Handle symlinks in system dirs</string>
+   </property>
+  </action>
+  <action name="actionRemove_TeX_Live_2016">
+   <property name="text">
+    <string>Remove TeX Live 2016</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="text">
+    <string>Manual</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
