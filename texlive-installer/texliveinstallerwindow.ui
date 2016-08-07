@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TexLiveInstallerWindow</class>
+ <widget class="QMainWindow" name="TexLiveInstallerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>841</width>
+    <height>905</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TexLive Installation</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="tlBanner">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="tlIcon">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/img/Logo_TeX_Live.svg</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="tlVersion">
+        <property name="text">
+         <string>V4321xxx</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="tlSetup">
+      <item>
+       <widget class="QLabel" name="tlTitle">
+        <property name="text">
+         <string>Tex Live 2016 Installation</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="basicInfomationGB">
+        <property name="title">
+         <string>Basic Information</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Selected &amp;scheme</string>
+           </property>
+           <property name="buddy">
+            <cstring>comboBox</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>scheme-full</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>medium scheme (small + more packages and languages)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>small scheme (basic + xetex, metapost, a few languages)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>basic scheme (plain and latex)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>minimal scheme (plain only)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ConTeX scheme</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GUTS TeX Live scheme</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>teTeX scheme (more than medium, but nowhere near full)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>XML scheme</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>custom selecttion of collections</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="furtherCustomizationGB">
+        <property name="title">
+         <string>Futher Customization</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Installation &amp;collections</string>
+             </property>
+             <property name="buddy">
+              <cstring>pushButton</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Change...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>48 collections out of 48 (disk space required: 4483 MB)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="directorySetupGB">
+        <property name="title">
+         <string>Directory setup</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="portableSetupt">
+             <property name="text">
+              <string>P&amp;ortable setup</string>
+             </property>
+             <property name="buddy">
+              <cstring>isPortableLbl</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="isPortableLbl">
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>No</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="texDir">
+             <property name="text">
+              <string>TEX&amp;DIR (the main TeX directory)</string>
+             </property>
+             <property name="buddy">
+              <cstring>texDirPath</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="texDirPath">
+             <property name="text">
+              <string>C:\texlive\2016</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="changeTexDirBt">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Change...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="texMfLocalLbl">
+             <property name="text">
+              <string>TEXMF&amp;LOCAL (directory for site-wide local files)</string>
+             </property>
+             <property name="buddy">
+              <cstring>texMfLocalPath</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="texMfLocalPath">
+             <property name="text">
+              <string>C:\texlive\texmf-local</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="changeTexMfLocalBt">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Change...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="texMfSysVarLbl">
+             <property name="text">
+              <string>TEXMFSYS&amp;VAR (directory for autogenerated data)</string>
+             </property>
+             <property name="buddy">
+              <cstring>texMfSysVarPath</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="texMfSysVarPath">
+             <property name="text">
+              <string>C:\texlive\2016\texmf-var</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QPushButton" name="changeTexMfSysVar">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Change...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="texMfSysConfigLbl">
+             <property name="text">
+              <string>TEXMFSYS&amp;CONFIG (directory for local config)</string>
+             </property>
+             <property name="buddy">
+              <cstring>texMfSysConfig</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="texMfSysConfig">
+             <property name="text">
+              <string>C:\texlive\2016\texmf-config</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QPushButton" name="changeTexMfSysConfigBt">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Change...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="texMfHomeLbl">
+             <property name="text">
+              <string>TEXMF&amp;HOME (directory for user-specific files)</string>
+             </property>
+             <property name="buddy">
+              <cstring>texMfHomePath</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="texMfHomePath">
+             <property name="text">
+              <string>~\texmf</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QPushButton" name="changeTexMfHome">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Change...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="optionsGB">
+        <property name="title">
+         <string>Options</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Default &amp;paper size</string>
+             </property>
+             <property name="buddy">
+              <cstring>paperComboBox</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="paperComboBox">
+             <item>
+              <property name="text">
+               <string>A4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>letter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Allow execution of restricted list of programs via &amp;write18</string>
+             </property>
+             <property name="buddy">
+              <cstring>write18CB</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="write18CB">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Create all &amp;format files</string>
+             </property>
+             <property name="buddy">
+              <cstring>createAllFormatCB</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="createAllFormatCB">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Install font/macro doc tree</string>
+             </property>
+             <property name="buddy">
+              <cstring>installFontMacroDocTreeCB</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QCheckBox" name="installFontMacroDocTreeCB">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Install font/macro source tree</string>
+             </property>
+             <property name="buddy">
+              <cstring>installFontMacroSourceTreeCB</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QCheckBox" name="installFontMacroSourceTreeCB">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>Adjust PATH setting in &amp;registry</string>
+             </property>
+             <property name="buddy">
+              <cstring>adjustPathCP</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QCheckBox" name="adjustPathCP">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>Add &amp;menu shortcuts</string>
+             </property>
+             <property name="buddy">
+              <cstring>addMenuShortCutCB</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QCheckBox" name="addMenuShortCutCB">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>Change file &amp;associations</string>
+             </property>
+             <property name="buddy">
+              <cstring>comboBox_3</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QComboBox" name="comboBox_3">
+             <item>
+              <property name="text">
+               <string>None</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Only new</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>All</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>Installation for all &amp;users</string>
+             </property>
+             <property name="buddy">
+              <cstring>installForAllUserCB</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QCheckBox" name="installForAllUserCB">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>Install TeXworks front end</string>
+             </property>
+             <property name="buddy">
+              <cstring>installTexWorksCB</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QCheckBox" name="installTexWorksCB">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>After installation, get package &amp;updates from CTAN</string>
+             </property>
+             <property name="buddy">
+              <cstring>updateAfterInstallCB</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1">
+            <widget class="QCheckBox" name="updateAfterInstallCB">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>About...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string>Install &amp;Tex Live</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>Quit</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>841</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>comboBox</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>isPortableLbl</tabstop>
+  <tabstop>texDirPath</tabstop>
+  <tabstop>changeTexDirBt</tabstop>
+  <tabstop>texMfLocalPath</tabstop>
+  <tabstop>changeTexMfLocalBt</tabstop>
+  <tabstop>texMfSysVarPath</tabstop>
+  <tabstop>changeTexMfSysVar</tabstop>
+  <tabstop>texMfSysConfig</tabstop>
+  <tabstop>changeTexMfSysConfigBt</tabstop>
+  <tabstop>texMfHomePath</tabstop>
+  <tabstop>changeTexMfHome</tabstop>
+  <tabstop>paperComboBox</tabstop>
+  <tabstop>write18CB</tabstop>
+  <tabstop>createAllFormatCB</tabstop>
+  <tabstop>installFontMacroDocTreeCB</tabstop>
+  <tabstop>installFontMacroSourceTreeCB</tabstop>
+  <tabstop>adjustPathCP</tabstop>
+  <tabstop>addMenuShortCutCB</tabstop>
+  <tabstop>comboBox_3</tabstop>
+  <tabstop>installForAllUserCB</tabstop>
+  <tabstop>installTexWorksCB</tabstop>
+  <tabstop>updateAfterInstallCB</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_4</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

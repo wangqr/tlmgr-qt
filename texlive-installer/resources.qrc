@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>Logo_TeX_Live.svg</file>
+    </qresource>
+</RCC>
