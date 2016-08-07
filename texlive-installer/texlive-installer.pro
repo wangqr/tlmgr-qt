@@ -13,11 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        texliveinstallerwindow.cpp
+        texliveinstallerwindow.cpp \
+    aboutwindow.cpp
 
-HEADERS  += texliveinstallerwindow.h
+HEADERS  += texliveinstallerwindow.h \
+    aboutwindow.h
 
-FORMS    += texliveinstallerwindow.ui
+FORMS    += texliveinstallerwindow.ui \
+    aboutwindow.ui
 
 RESOURCES += \
     resources.qrc

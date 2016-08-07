@@ -644,21 +644,21 @@
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="aboutBt">
              <property name="text">
               <string>About...</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_3">
+            <widget class="QPushButton" name="installBt">
              <property name="text">
               <string>Install &amp;Tex Live</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_4">
+            <widget class="QPushButton" name="quitBt">
              <property name="text">
               <string>Quit</string>
              </property>
@@ -732,9 +732,9 @@
   <tabstop>installForAllUserCB</tabstop>
   <tabstop>installTexWorksCB</tabstop>
   <tabstop>updateAfterInstallCB</tabstop>
-  <tabstop>pushButton_3</tabstop>
-  <tabstop>pushButton_2</tabstop>
-  <tabstop>pushButton_4</tabstop>
+  <tabstop>installBt</tabstop>
+  <tabstop>aboutBt</tabstop>
+  <tabstop>quitBt</tabstop>
  </tabstops>
  <resources>
   <include location="resources.qrc"/>
