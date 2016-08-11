@@ -14,13 +14,23 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         texliveinstallerwindow.cpp \
-    aboutwindow.cpp
+    aboutwindow.cpp \
+    installerguicontroller.cpp \
+    selectcollectiondialog.cpp
 
 HEADERS  += texliveinstallerwindow.h \
-    aboutwindow.h
+    aboutwindow.h \
+    installerguicontroller.h \
+    selectcollectiondialog.h
 
 FORMS    += texliveinstallerwindow.ui \
-    aboutwindow.ui
+    aboutwindow.ui \
+    selectcollectiondialog.ui
 
 RESOURCES += \
     resources.qrc
+
+DISTFILES += \
+    texlive-installer.pri
+
+TRANSLATIONS    = texlive-installer_de.ts 

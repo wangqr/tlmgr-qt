@@ -11,13 +11,19 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>About</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;TeXLive 2016&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Please see &lt;a href=&quot;http://www.tug.org/texlive&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.tug.org/texlive&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;GUI installer&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright 2009-2016 The TeX Live Team&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Licenced under the GNU General Public License version 2 or higher&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;In case of problems, please contact: texlive@tug.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;TeX Live 2016&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Please see &lt;a href=&quot;http://www.tug.org/texlive&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.tug.org/texlive&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;GUI installer&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Copyright 2009-2016 The TeX Live Team&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Licenced under the GNU General Public License version 2 or higher&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;In case of problems, please contact: texlive@tug.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </item>

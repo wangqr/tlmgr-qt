@@ -1,3 +1,5 @@
 build-*
-texlive-installer/texlive-installer.pro.user
+**/*.pro.user
+**/*.pro.user.*
+
 
